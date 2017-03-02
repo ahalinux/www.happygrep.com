@@ -1,0 +1,18 @@
+# Example #
+# /[Tt]emp/
+# /Assets/AssetStoreTools*
+# /.vs/
+# .consulo/
+# *.csproj
+# *.pidb.meta
+# sysinfo.txt
+
+
+# this Project #
+/node_modules/
+/node-v*
+/__otherfiles*
+/bower_components/
+
+gruntfile.js
+bower.json
