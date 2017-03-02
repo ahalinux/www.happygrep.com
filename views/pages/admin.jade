@@ -1,0 +1,42 @@
+extends ../layout
+block content
+    .container
+        .row
+            form.form-horizontal(method="post", action="/admin/movie/save")
+                if movie._id
+                    input.form-control(type="hidden", name="movie[_id]", value=movie._id)
+                .form-group
+                    label.control-label.col-sm-2 电影名字
+                    .col-sm-10
+                        input.form-control(type="text", name="movie[title]", value=movie.title)
+                .form-group
+                    label.control-label.col-sm-2 电影导演
+                    .col-sm-10
+                        input.form-control(type="text", name="movie[doctor]", value=movie.doctor)
+                .form-group
+                    label.control-label.col-sm-2 国家
+                    .col-sm-10
+                        input.form-control(type="text", name="movie[country]", value=movie.country)
+                .form-group
+                    label.control-label.col-sm-2 语种
+                    .col-sm-10
+                        input.form-control(type="text", name="movie[language]", value=movie.language)
+                .form-group
+                    label.control-label.col-sm-2 海报地址
+                    .col-sm-10
+                        input.form-control(type="text", name="movie[poster]", value=movie.poster)
+                .form-group
+                    label.control-label.col-sm-2 片源地址
+                    .col-sm-10
+                        input.form-control(type="text", name="movie[flash]", value=movie.flash)
+                .form-group
+                    label.control-label.col-sm-2 上映年代
+                    .col-sm-10
+                        input.form-control(type="text", name="movie[year]", value=movie.year)
+                .form-group
+                    label.control-label.col-sm-2 电影简介
+                    .col-sm-10
+                        input.form-control(type="text", name="movie[summary]", value=movie.summary)
+                .form-group
+                    .col-sm-10
+                        button.btn.btn-default(type="submit") 录入
