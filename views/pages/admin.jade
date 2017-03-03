@@ -6,11 +6,11 @@ block content
                 if movie._id
                     input.form-control(type="hidden", name="movie[_id]", value=movie._id)
                 .form-group
-                    label.control-label.col-sm-2 电影名字
+                    label.control-label.col-sm-2 名字
                     .col-sm-10
                         input.form-control(type="text", name="movie[title]", value=movie.title)
                 .form-group
-                    label.control-label.col-sm-2 电影导演
+                    label.control-label.col-sm-2 导演
                     .col-sm-10
                         input.form-control(type="text", name="movie[doctor]", value=movie.doctor)
                 .form-group
@@ -34,7 +34,7 @@ block content
                     .col-sm-10
                         input.form-control(type="text", name="movie[year]", value=movie.year)
                 .form-group
-                    label.control-label.col-sm-2 电影简介
+                    label.control-label.col-sm-2 简介
                     .col-sm-10
                         input.form-control(type="text", name="movie[summary]", value=movie.summary)
                 .form-group

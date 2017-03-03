@@ -16,11 +16,12 @@ console.log('Server started on port ' + port);
 // index page
 app.get('/', function(req,res){
     res.render('index',{
-        title: '首页',
+        title: 'INDEX',
         movies:[{
-            title:'机械战警',
+            title:'VR Game X-Defender',
             _id:1,
-            poster:'http://r3.ykimg.com/05160000530EEB63675839160D0B79D5'
+            //poster:'http://r3.ykimg.com/05160000530EEB63675839160D0B79D5'
+            poster:'./_images/0.png'
         }]
     })
 })
@@ -28,7 +29,17 @@ app.get('/', function(req,res){
 // detail page
 app.get('/article/:id', function(req,res){
     res.render('detail',{
-        title: '详情页'
+        title: 'DETAIL',
+        article:{
+            doctor: 'nihao',
+            country: 'nihao',
+            title: 'nihao',
+            year: 2016,
+            poster: './_images/0.png',
+            language: 'english',
+            flash: './_images/0.png',
+            summary: 'nihaonihao'
+        }
     })
 })
 

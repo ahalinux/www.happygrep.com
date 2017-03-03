@@ -3,18 +3,19 @@ block content
     .container
         .row
             .col-md-7
-                embed(src="#{movie.flash}",allowFullScreen="true",quality="high",width="720",height="600",align="middle",type="application/x-shockwave-flash")
+                //embed(src="#{article.flash}",allowFullScreen="true",quality="high",width="720",height="600",align="middle",type="application/x-shockwave-flash")
+                img(src="#{article.flash}", alt="#{article.title}")
             .col-md-5
                 dl.dl-horizontal
-                    dt 电影名字
-                    dd #{movie.title}
-                    dt 导演
-                    dd #{movie.doctor}
+                    dt 游戏名称
+                    dd #{article.title}
+                    dt 更新时间
+                    dd #{article.doctor}
                     dt 国家
-                    dd #{movie.country}
+                    dd #{article.country}
                     dt 语言
-                    dd #{movie.language}
-                    dt 上映年份
-                    dd #{movie.year}
+                    dd #{article.language}
+                    dt 年份
+                    dd #{article.year}
                     dt 简介
-                    dd #{movie.summary}
+                    dd #{article.summary}
