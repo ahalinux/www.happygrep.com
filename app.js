@@ -8,7 +8,7 @@ app.set('views','./views/pages');
 app.set('view engine','jade');
 
 app.use(bodyParser.urlencoded({extended: false}));
-app.use(express.static(path.join(__dirname,'bower_components')));
+app.use(express.static(path.join(__dirname,'public')));
 
 app.listen(port);
 console.log('Server started on port ' + port);

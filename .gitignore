@@ -13,6 +13,8 @@
 /node-v*
 /__otherfiles*
 /bower_components/
+/public/libs/
 
 gruntfile.js
 bower.json
+.bowerrc
