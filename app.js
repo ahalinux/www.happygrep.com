@@ -17,10 +17,9 @@ console.log('Server started on port ' + port);
 app.get('/', function(req,res){
     res.render('index',{
         title: 'INDEX',
-        movies:[{
+        articles:[{
             title:'VR Game X-Defender',
             _id:1,
-            //poster:'http://r3.ykimg.com/05160000530EEB63675839160D0B79D5'
             poster:'./_images/0.png'
         }]
     })
@@ -31,14 +30,20 @@ app.get('/article/:id', function(req,res){
     res.render('detail',{
         title: 'DETAIL',
         article:{
-            doctor: 'nihao',
-            country: 'nihao',
-            title: 'nihao',
-            year: 2016,
-            poster: './_images/0.png',
-            language: 'english',
-            flash: './_images/0.png',
-            summary: 'nihaonihao'
+            title: 'X-Defender VR',
+            poster:'./_images/0.png',
+            gamename_en: 'X-Defender VR',
+            gamename_cn: '防御者 VR',
+            gametype: 'VR',
+            gameplatform: 'Android Phone',
+            peripherals: 'Google Cardboard or Xiaomi VR Play',
+            gamelanguage: '国语 英语',
+            gameversion: 'beta 1.0.1',
+            lastupdate: '2017-01-30',
+            devtools: 'Unity Blender',
+            packagelink: 'https://pan.baidu.com/s/1qYIvSwG',
+            packagepassword: 'i3ie',
+            gamesummary: '这是一个经典塔防游戏的 VR 版本'
         }
     })
 })

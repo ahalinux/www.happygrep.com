@@ -3,19 +3,29 @@ block content
     .container
         .row
             .col-md-7
-                //embed(src="#{article.flash}",allowFullScreen="true",quality="high",width="720",height="600",align="middle",type="application/x-shockwave-flash")
-                img(src="#{article.flash}", alt="#{article.title}")
+                //-img(src="#{article.poster}", alt="#{article.title}")
+                <img src="#{article.poster}">
             .col-md-5
                 dl.dl-horizontal
-                    dt 游戏名称
-                    dd #{article.title}
-                    dt 更新时间
-                    dd #{article.doctor}
-                    dt 国家
-                    dd #{article.country}
-                    dt 语言
-                    dd #{article.language}
-                    dt 年份
-                    dd #{article.year}
-                    dt 简介
-                    dd #{article.summary}
+                    dt 英文名称
+                    dd #{article.gamename_en}
+                    dt 中文名称
+                    dd #{article.gamename_cn}
+                    dt 游戏类型
+                    dd #{article.gametype}
+                    dt 运行平台
+                    dd #{article.gameplatform}
+                    dt 所需外设
+                    dd #{article.peripherals}
+                    dt 游戏语言
+                    dd #{article.gamelanguage}
+                    dt 当前版本
+                    dd #{article.gameversion}
+                    dt 最后更新
+                    dd #{article.lastupdate}
+                    dt 开发工具
+                    dd #{article.devtools}
+                    dt 游戏安装包
+                    dd <a href=#{article.packagelink} target="_blank">百度网盘&nbsp;</a>&nbsp;&nbsp;Password:&nbsp;#{article.packagepassword}
+                    dt 游戏简介
+                    dd #{article.gamesummary}
