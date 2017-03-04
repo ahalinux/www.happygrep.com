@@ -20,7 +20,7 @@ app.get('/', function(req,res){
         articles:[{
             title:'VR Game X-Defender',
             _id:1,
-            poster:'./_images/0.png'
+            poster:'/_images/0.png'
         }]
     })
 })
@@ -31,7 +31,10 @@ app.get('/article/:id', function(req,res){
         title: 'DETAIL',
         article:{
             title: 'X-Defender VR',
-            poster:'./_images/0.png',
+            poster0:'/_images/0.png',
+            poster1:'/_images/1.png',
+            poster2:'/_images/2.png',
+            poster3:'/_images/3.png',
             gamename_en: 'X-Defender VR',
             gamename_cn: '防御者 VR',
             gametype: 'VR',

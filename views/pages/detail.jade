@@ -2,12 +2,9 @@ extends ../layout
 block content
     .container
         .row
-            .col-md-7
-                //-img(src="#{article.poster}", alt="#{article.title}")
-                <img src="#{article.poster}">
             .col-md-5
                 dl.dl-horizontal
-                    dt 英文名称
+                    dt:英文名称
                     dd #{article.gamename_en}
                     dt 中文名称
                     dd #{article.gamename_cn}
@@ -29,3 +26,13 @@ block content
                     dd <a href=#{article.packagelink} target="_blank">百度网盘&nbsp;</a>&nbsp;&nbsp;Password:&nbsp;#{article.packagepassword}
                     dt 游戏简介
                     dd #{article.gamesummary}
+                    <hr>
+            .col-md-7
+                img(src="#{article.poster0}",width="640",height="360",alt="#{article.title}")
+                <hr>
+                img(src="#{article.poster1}",width="640",height="360",alt="#{article.title}")
+                <hr>
+                img(src="#{article.poster2}",width="640",height="360",alt="#{article.title}")
+                <hr>
+                img(src="#{article.poster3}",width="640",height="360",alt="#{article.title}")
+                <hr>
