@@ -14,6 +14,7 @@
 /__otherfiles*
 /bower_components/
 /public/libs/
+/public/
 
 gruntfile.js
 bower.json
