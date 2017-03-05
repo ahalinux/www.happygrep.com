@@ -1,0 +1,53 @@
+extends ../layout
+block content
+    .container
+        .text-right
+            p: a.btn.btn-primary.btn-lg(href="/", role="button") &nbsp;&nbsp;返回&nbsp;&nbsp;
+        .row
+            .col-md-6
+                dl.dl-horizontal(style="font-size: 18px")
+                    <br/>
+                    dt 中文名称
+                    dd #{article.gamename_cn}
+                    dt:英文名称
+                    dd #{article.gamename_en}
+                    dt 游戏类型
+                    dd #{article.gametype}
+                    dt 运行平台
+                    dd #{article.gameplatform}
+                    dt 所需外设
+                    dd #{article.peripherals}
+                    dt 游戏语言
+                    dd #{article.gamelanguage}
+                    dt 当前版本
+                    dd #{article.gameversion}
+                    dt 最后更新
+                    dd #{article.lastupdate}
+                    dt 开发工具
+                    dd #{article.devtools}
+                    dt 开发源码
+                    //-dd <a href=#{article.devsource} target="_blank"><img src="#{article.devlogo}" style="width:100px; height:37px"></a>
+                    dd <a href=#{article.devsource} target="_blank">Github</a>
+                    dt 游戏安装包
+                    dd <a href=#{article.packagelink} target="_blank">百度网盘&nbsp;</a>&nbsp;&nbsp;Password:&nbsp;#{article.packagepassword}
+                    dt 游戏简介
+                    dd #{article.gamesummary}
+                    <br/>
+                    <hr>
+                    <br/>
+            .col-md-6.text-center
+                img(src="#{article.poster0}",width="704",height="396",alt="#{article.title}")
+                <hr>
+                img(src="#{article.poster1}",width="704",height="396",alt="#{article.title}")
+                <hr>
+                img(src="#{article.poster2}",width="704",height="396",alt="#{article.title}")
+                <hr>
+                img(src="#{article.poster3}",width="704",height="396",alt="#{article.title}")
+                <hr>
+        .text-right
+            p: a.btn.btn-primary.btn-lg(href="/", role="button") &nbsp;&nbsp;返回&nbsp;&nbsp;
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
