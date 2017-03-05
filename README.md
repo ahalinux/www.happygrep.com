@@ -1,4 +1,5 @@
-# www.happygrep.com
+# My Casual Games Website
+- www.happygrep.com
 
-## About this Site
-ahalinux's 休闲游戏馆
+## Site Structure
+![structure](http://www.happygrep.com/_images/structure.png)
