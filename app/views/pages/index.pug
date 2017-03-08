@@ -1,47 +1,44 @@
 extends ../layout
 block content
-    .container
+    .container-fluid
         .text-center
         .row
             each item in articles
                 .col-md-6
                     .thumbnail
                         if item.ifactive
-                            <br/>
+                            br
                             span.label.label-default(style="font-size: 20px") #{item.type}
-                            &nbsp;
+                            | &nbsp;
                             span.label.label-default(style="font-size: 20px") #{item.ttype}
-                            &nbsp;
+                            | &nbsp;
                             span.label.label-primary(style="font-size: 20px") #{item.tplatform2}
-                            //-&nbsp;
-                            //-span.label.label-primary(style="font-size: 20px") #{item.tplatform2}
-                            &nbsp;
+                            | &nbsp;
                             span.label.label-default(style="font-size: 20px") #{item.tstatus}
-                            <br/>
-                            a(href="/article/#{item._id}")
-                                img(src="#{item.poster}", alt="#{item.title}")
-                            .caption
+                            | &nbsp;
+                            a(href="/article/"+item._id)
+                                img(src=item.poster, alt=item.title)
+                            //-.caption
                                 .text-center
-                                    <br/>
+                                    br
                                     h2 <strong>#{item.title}</strong>
-                                    <br/>
-                                    p: a.btn.btn-primary.btn-lg(href="/article/#{item._id}", role="button") &nbsp;&nbsp;&nbsp;#{item.buttontext}&nbsp;&nbsp;&nbsp;
+                                    br
+                                    p: a.btn.btn-primary.btn-lg(href="/article/"+item._id, role="button") #{item.buttontext}
                         else
-                            <br/>
+                            br
                             span.label.label-default(style="font-size: 20px") #{item.type}
-                            &nbsp;
+                            | &nbsp;
                             span.label.label-default(style="font-size: 20px") #{item.ttype}
-                            &nbsp;
+                            | &nbsp;
                             span.label.label-primary(style="font-size: 20px") #{item.tplatform1}
-                            //-&nbsp;
-                            //-span.label.label-primary(style="font-size: 20px") #{item.tplatform2}
-                            &nbsp;
+                            | &nbsp;
                             span.label.label-default(style="font-size: 20px") #{item.tstatus}
-                            <br/>
-                            img(src="#{item.poster}", alt="#{item.title}")
-                            .caption
+                            | &nbsp;
+                            br
+                            img(src=item.poster, alt=item.title)
+                            //-.caption
                                 .text-center
-                                    <br/>
+                                    br
                                     h2 <strong>#{item.title}</strong>
-                                    <br/>
+                                    br
                                     p: a.btn.btn-primary.btn-lg.disabled(href="/article/#{item._id}", role="button") #{item.buttontext}
